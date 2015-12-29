@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realtime Markdown Editor</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div ng-app="mded">
+    <h2 class="h2">Realtime Markdown Editor using AngularJS</h2>
+    <div class="row">
+        <div class="col-md-6 portion-le" contenteditable="true" id="editable" ng-controller="firstCtrl" ng-model="data.message"></div>
+        <div class="col-md-6 portion-ri" ng-controller="secondCtrl">{{data.message|play}}</div>
+    </div>
+</div>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+<script>
+    window.onload = function() {
+        document.getElementById("editable").focus();
+    };
+</script>
+</body>
+</html>
