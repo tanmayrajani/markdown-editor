@@ -13,7 +13,10 @@
         <div class="col-md-6 portion-le" ng-controller="FirstCtrl">
             <textarea autofocus ng-model="data.message" name="tete" id="tete" cols="73" rows="42"></textarea>
         </div>
-        <div class="col-md-6 portion-ri" ng-controller="SecondCtrl">{{data.message|play}}</div>
+        <div class="col-md-6 portion-ri" ng-controller="SecondCtrl">
+            <div bind-html-unsafe="data.message|play"></div>
+            <!--<span>{{data.message|play}}</span>-->
+        </div>
     </div>
 </div>
 <script src="lib/jquery.min.js"></script>
