@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown-editor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        .autho{
+            margin: 40px 0px;
+        }
+        img{
+            float: left;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1 class="text-primary text-center">Markdown Editor
+    <div class="container">
+        <button class="btn-primary btn autho">Authorize with GitHub to start using</button>
+        <img src="screenshot.png" alt="screenshot">
+    </div>
+</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+    $(function() {
+        $(".autho").click(function () {
+            window.open("https://github.com/login/oauth/authorize?client_id=30c3384edb45c8ebe81e&redirect_uri=http://107.170.42.182/editor");
+        })
+    });
+</script>
+</body>
+</html>
