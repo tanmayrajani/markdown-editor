@@ -7,15 +7,30 @@
     <style>
         .autho{
             margin: 40px 0px;
+            font-size: 18px;
         }
         img{
             float: left;
             max-width: 100%;
         }
         body{
-            background-image: url('/download.png');
+            background-image: url('download.png');
             background-repeat: no-repeat;
             background-size: cover;
+        }
+        h1{
+            margin-top: 20% !important;
+            font-size: 60px;
+            text-align: center;
+            font-family: monospace !important;
+        }
+        .footer{
+            text-align: center;
+            font-family: Monospace;
+            margin-top: 100px;
+        }
+        .err{
+            font-size: 14px;
         }
     </style>
 </head>
@@ -23,8 +38,14 @@
 <h1 class="text-primary text-center">Markdown Editor
     <div class="container">
         <button class="btn-primary btn autho">Authorize with GitHub to start using</button>
+        <div class="err"><a href="https://en.wikipedia.org/wiki/Markdown">Er.. WTH is markdown anyway?</a></div>
     </div>
 </h1>
+<footer>
+    <div class="footer">
+        Made by <a href="https://tanmayrajani.me">Tanmay Rajani</a>. No rights (ever) reserved.
+    </div>
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script>
