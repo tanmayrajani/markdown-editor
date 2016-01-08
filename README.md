@@ -2,6 +2,6 @@
 
 > Realtiome Markdown Editor using `AngularJS` 
 
-It is working decent right now using GitHub Markdown API. Though I'm using no-auth version which only allows 60 requests/hr. That is a major drawback right now. I wish to extend it using Auth in future.
+This is using GitHub Markdown API [Raw]. It is using OAuth to authenticate user with GitHub. (Max. 5000 requests/hour.)
 
 ![Screenshot](etc/screenshot.png?raw=true)
