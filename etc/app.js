@@ -3,24 +3,11 @@ myApp.factory('Data',function () {
     return {message: ""}
 });
 
-//myApp.filter('play',function (Data) {
-//    return function (text, access_token) {
-//
-//        var $http = angular.injector(["ng"]).get("$http");
-//        $http.post('http://api.github.com/markdown/raw?access_token='+access_token, text , {headers:{'Content-Type':'text/plain'}}).then(function(res){
-//            Data.dddd = res.data;
-//            console.log(Data.dddd);
-//            //return Data.dddd;
-//        });
-//        return Data.dddd;
-//    }
-//})
-
 function FirstCtrl($scope,Data){
     $scope.data = Data;
 }
 
-function SecondCtrl($scope,$http,$location,Data){
+function SecondCtrl($scope,$location,Data){
     $scope.data = Data;
     $scope.location = $location;
     $scope.markdwn = function () {
@@ -34,6 +21,8 @@ function SecondCtrl($scope,$http,$location,Data){
     }
 }
 
+// Following directive has been pasted from SO answer
+//TODO: Understand how this works
 myApp.directive('bindHtmlUnsafe', function( $compile ) {
     return function( $scope, $element, $attrs ) {
 
