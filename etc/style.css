@@ -8,30 +8,34 @@ h2{
 }
 
 .row{
-    padding:0 2%;
+    padding:0 1.5%;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .portion-le{
-    min-height: 90vh;
     width: 45%;
     float: left;
-    margin:0 1.1%;
+    margin:0 0.9%;
+    max-height: 90%;
     font-size: 20px;
-    border: 2px dashed black;
 }
 
 .portion-ri{
-    background-color: azure;
-    min-height: 90vh;
-    float: right;
-    width: 47.5%;
-    border: 2px dashed black;
-
+    width: 50%;
+    margin-left: 20px;
+    background-color: antiquewhite;
+    min-height: 88.5vh;
+    float: left;
 }
 
 #tete{
-    padding: 10px;
+    background-color: antiquewhite;
     font-size: 20px;
-    background-color: azure;
+    width: 100%;
+    padding: 1.2%;
     border:none;
+    height: 100%;
 }
