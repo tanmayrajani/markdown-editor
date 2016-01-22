@@ -9,9 +9,7 @@ function FirstCtrl($scope,Data){
 
 function SecondCtrl($scope,$location,$element,$compile,Data){
     $scope.data = Data;
-
     $scope.location = $location;
-
     $scope.compile = function( newHTML ) {
         newHTML = $compile(newHTML)($scope);
         $element.html('').append(newHTML);
@@ -22,7 +20,6 @@ function SecondCtrl($scope,$location,$element,$compile,Data){
         $http.post('http://api.github.com/markdown/raw?access_token=' + $scope.location.$$absUrl.substring($scope.location.$$absUrl.indexOf("=")+1),
                 newval,
                 {headers:{'Content-Type':'text/plain'}})
-
             .then(function(res){
                 $scope.data.dddd = res.data;
                 //console.log($scope.data.dddd);
