@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83e2438d-b779-4bda-a8ad-b7614e492507" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/md.html" afterPath="$PROJECT_DIR$/etc/md.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/style.css" afterPath="$PROJECT_DIR$/etc/style.css" />
     </list>
     <ignored path="newapp.iws" />
@@ -24,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="md.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="md.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/etc/md.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27096775">
+            <state vertical-scroll-proportion="-9.333333">
               <caret line="14" column="149" selection-start-line="14" selection-start-column="149" selection-end-line="14" selection-end-column="149" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/etc/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.7935484">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -66,8 +65,8 @@
         <option value="$PROJECT_DIR$/.git/info/exclude" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/etc/app.js" />
-        <option value="$PROJECT_DIR$/etc/style.css" />
         <option value="$PROJECT_DIR$/etc/md.html" />
+        <option value="$PROJECT_DIR$/etc/style.css" />
       </list>
     </option>
   </component>
@@ -478,18 +477,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/etc/style.css">
+    <entry file="file://$PROJECT_DIR$/etc/md.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.333333">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="14" column="149" selection-start-line="14" selection-start-column="149" selection-end-line="14" selection-end-column="149" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/etc/md.html">
+    <entry file="file://$PROJECT_DIR$/etc/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27096775">
-          <caret line="14" column="149" selection-start-line="14" selection-start-column="149" selection-end-line="14" selection-end-column="149" />
+        <state vertical-scroll-proportion="0.7935484">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
           <folding />
         </state>
       </provider>
