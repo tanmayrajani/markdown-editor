@@ -25,7 +25,7 @@ function SecondCtrl($scope,$location,$element,$compile,Data){
 
             .then(function(res){
                 $scope.data.dddd = res.data;
-                console.log($scope.data.dddd);
+                //console.log($scope.data.dddd);
                 if(!$scope.data.dddd) return;
                 $scope.compile($scope.data.dddd);
             });
