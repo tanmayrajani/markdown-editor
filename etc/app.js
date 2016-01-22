@@ -1,10 +1,15 @@
 var myApp = angular.module('myApp',[]);
-myApp.factory('Data',function () {
-    return {message: ""}
+myApp.factory('Data',function ($window) {
+    return {message: $window.localStorage['stuff']}
 });
 
-function FirstCtrl($scope,Data){
+function FirstCtrl($scope,$window,Data){
     $scope.data = Data;
+    $scope.$watch(
+        "data.message",
+        function (newval,oldval){
+            $window.localStorage['stuff'] = newval;
+        })
 }
 
 function SecondCtrl($scope,$location,$element,$compile,Data){
