@@ -7,14 +7,14 @@ myApp.factory('myData',function ($window) {
     }
 });
 
-function EditorCtrl($scope,$window,myData){
+myApp.controller('EditorCtrl',function($scope,$window,myData){
     $scope.data = myData;
     $scope.$watch('data.message',function (newval){
         $window.localStorage['stuff'] = newval;
     })
-}
+});
 
-function MarkdownRenderCtrl($scope,$location,$element,$compile,myData){
+myApp.controller('MarkdownRenderCtrl',function($scope,$location,$element,$compile,myData){
     $scope.data = myData;
     $scope.location = $location;
     $scope.compile = function( newHTML ) {
@@ -34,4 +34,4 @@ function MarkdownRenderCtrl($scope,$location,$element,$compile,myData){
                 $scope.compile($scope.data.dddd);
             });
     })
-}
+})

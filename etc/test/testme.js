@@ -1,4 +1,4 @@
-describe("Testing myData factory", function() {
+describe('Testing myData factory', function() {
 	beforeEach(module('myApp'));
 	var myData, store,window;
 	beforeEach(inject(function(_myData_,$window) {
@@ -17,8 +17,27 @@ describe("Testing myData factory", function() {
 		});
 	}));
 
-	it("feature desc", function() {
+	it('feature desc', function() {
 		localStorage['stuff'] = 'hello';
 		expect(myData.message()).toEqual('hello');
 	});
 });
+
+describe('EditorCtrl', function () {
+	var $controllerConstructor, scope, mockmyData, windowx;
+
+	beforeEach(module('myApp'));
+
+	beforeEach(inject(function ($controller, $rootScope) {
+		$controllerConstructor = $controller;
+		scope = $rootScope.$new();
+		mockmyData = sinon.stub({});
+		windowx = window;
+	}))
+
+	it('should test ctrl', function () {
+		var ctrl = $controllerConstructor('EditorCtrl',{'$scope':scope,'$window':windowx,myData:mockmyData});
+		expect(scope.data).toBe(mockmyData);
+	})
+
+})
