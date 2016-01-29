@@ -1,4 +1,4 @@
-describe('Testing myData factory', function() {
+describe("Testing myData factory", function() {
 	beforeEach(module('myApp'));
 	var myData, store,window;
 	beforeEach(inject(function(_myData_,$window) {
@@ -17,12 +17,8 @@ describe('Testing myData factory', function() {
 		});
 	}));
 
-	it('feature desc', function() {
+	it("feature desc", function() {
 		localStorage['stuff'] = 'hello';
 		expect(myData.message()).toEqual('hello');
 	});
 });
-
-describe('EditorCtrl', function () {
-
-})

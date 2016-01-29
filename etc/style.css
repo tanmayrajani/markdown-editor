@@ -1,0 +1,47 @@
+html{
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    font-size: large;
+}
+
+.row{
+    padding:0 1.5%;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.portion-le{
+    width: 45%;
+    float: left;
+    margin:0 0.9%;
+    max-height: 90%;
+    font-size: 20px;
+}
+
+.portion-ri{
+    width: 50%;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    border: 2px dashed black;
+    min-height: 88.5vh;
+    float: left;
+}
+
+#tete{
+    background-color: antiquewhite;
+    border: 2px dashed black;
+    font-size: 20px;
+    width: 100%;
+    padding: 1.2%;
+    height: 100%;
+}
