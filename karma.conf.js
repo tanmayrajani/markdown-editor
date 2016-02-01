@@ -17,7 +17,8 @@ module.exports = function(config) {
     files: [
 	    'etc/lib/angular.min.js',
 	    'etc/lib/angular-*.js',
-        'etc/**/*.js'
+	    'bower_components/**/*.js',
+	    'etc/**/*.js'
     ],
 
 
