@@ -18,8 +18,8 @@ describe('Testing myData factory', function() {
 	}));
 
 	it('feature desc', function() {
-		localStorage['stuff'] = 'hello';
-		expect(myData.message()).toEqual('hello');
+		localStorage['stuffx'] = 'hello';
+		expect(myData.message).toEqual('hello');
 	});
 });
 

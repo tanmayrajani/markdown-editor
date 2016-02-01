@@ -1,16 +1,15 @@
 var myApp = angular.module('myApp',[]);
 myApp.factory('myData',function ($window) {
-    return {
-        message: function () {
-	        return $window.localStorage['stuff'];
-        }
+    var myFactory = {
+        message: $window.localStorage['stuffx']
     }
+    return myFactory;
 });
 
 myApp.controller('EditorCtrl',function($scope,$window,myData){
     $scope.data = myData;
     $scope.$watch('data.message',function (newval){
-        $window.localStorage['stuff'] = newval;
+        $window.localStorage['stuffx'] = newval;
     })
 });
 
