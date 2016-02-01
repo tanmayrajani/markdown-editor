@@ -4,6 +4,7 @@ var querystring = require('querystring');
 var http = require("https");
 var path = require('path');
 app.use(express.static('etc'));
+app.use(express.static('bower_components'));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/hello.html'));
