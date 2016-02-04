@@ -15,7 +15,7 @@ a.thislink{
     color: whitesmoke;
 }
 
-a:hover{
+a.thislink:hover{
     text-decoration: none;
     color: white;
 }

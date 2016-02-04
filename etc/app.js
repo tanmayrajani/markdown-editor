@@ -10,6 +10,7 @@ myApp.controller('EditorCtrl',function($scope,$window,myData){
     $scope.data = myData;
     $scope.$watch('data.message',function (newval){
         $window.localStorage['stuffx'] = newval;
+		angular.element(document).find("#copying").html("Copy this to clipboard");
     })
 });
 
@@ -21,7 +22,7 @@ myApp.controller('MarkdownRenderCtrl',function($scope,$location,$element,$compil
         $element.html('').append(newHTML);
     };
 
-    $scope.$watch('data.message', function (newval, oldval) {
+    $scope.$watch('data.message', function (newval) {
         var $http = angular.injector(['ng']).get('$http');
         $http.post('http://api.github.com/markdown/raw?access_token=' + $scope.location.$$absUrl.substring($scope.location.$$absUrl.indexOf('=')+1),
                 newval,

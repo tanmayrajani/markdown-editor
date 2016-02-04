@@ -13,6 +13,7 @@
         <div class="col-md-6 portion-le" ng-controller="EditorCtrl">
             <textarea autofocus="autofocus" ng-model="data.message" name="tete" id="tete" cols="73" rows="20"></textarea>
             <button class="btn btn-primary"><a class="thislink" href="https://github.com/tanmayrajani/markdown-editor" target="_blank">Fork me on GitHub</a></button>
+            <button class="btn btn-primary" id="copying">Copy this to clipboard</button>
         </div>
         <div class="col-md-6 portion-ri" ng-controller="MarkdownRenderCtrl">
             <div bind-html-unsafe="data.dddd"></div>
@@ -24,5 +25,42 @@
 <script src="angular-mocks/angular-mocks.js"></script>
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="app.js"></script>
+<script>
+    document.getElementById("copying").addEventListener("click", function() {
+        if(copyToClipboard(document.getElementById("tete"))){
+            this.innerHTML = "Copied!";
+        }
+    });
+
+    function copyToClipboard(elem) {
+        // create hidden text element, if it doesn't already exist
+        var targetId = "_hiddenCopyText_";
+        var origSelectionStart, origSelectionEnd;
+
+        target = elem;
+        origSelectionStart = elem.selectionStart;
+        origSelectionEnd = elem.selectionEnd;
+
+        // select the content
+        var currentFocus = document.activeElement;
+        target.focus();
+        target.setSelectionRange(0, target.value.length);
+
+        // copy the selection
+        var succeed;
+        try {
+            succeed = document.execCommand("copy");
+        } catch(e) {
+            succeed = false;
+        }
+        // restore original focus
+        if (currentFocus && typeof currentFocus.focus === "function") {
+            currentFocus.focus();
+        }
+
+        elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+        return succeed;
+    }
+</script>
 </body>
 </html>
