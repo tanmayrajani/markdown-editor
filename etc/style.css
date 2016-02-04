@@ -10,7 +10,7 @@ h2{
 .row{
     padding:0 1.5%;
 }
-a{
+a.thislink{
     text-decoration: none;
     color: whitesmoke;
 }
