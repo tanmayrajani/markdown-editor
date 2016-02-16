@@ -2,7 +2,7 @@ var myApp = angular.module('myApp',[]);
 myApp.factory('myData',function ($window) {
     var myFactory = {
         message: $window.localStorage['stuffx']
-    }
+    };
     return myFactory;
 });
 
