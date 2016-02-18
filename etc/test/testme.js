@@ -17,7 +17,7 @@ describe('Testing myData factory', function() {
 		});
 	}));
 
-	it('feature desc', function() {
+	it('should test localstorage', function() {
 		localStorage['stuffx'] = 'hello';
 		expect(myData.message).toEqual('hello');
 	});
@@ -33,11 +33,11 @@ describe('EditorCtrl', function () {
 		scope = $rootScope.$new();
 		mockmyData = sinon.stub({});
 		windowx = window;
-	}))
+	}));
 
 	it('should test ctrl', function () {
 		var ctrl = $controllerConstructor('EditorCtrl',{'$scope':scope,'$window':windowx,myData:mockmyData});
 		expect(scope.data).toBe(mockmyData);
 	})
 
-})
+});

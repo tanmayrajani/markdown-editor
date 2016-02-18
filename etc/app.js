@@ -34,4 +34,4 @@ myApp.controller('MarkdownRenderCtrl',function($scope,$location,$element,$compil
                 $scope.compile($scope.data.dddd);
             });
     })
-})
+});
