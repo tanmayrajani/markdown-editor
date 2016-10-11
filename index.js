@@ -5,6 +5,7 @@ var http = require("https");
 var path = require('path');
 var att ='';
 
+app.set('port', (process.env.PORT || 5000))
 app.use(express.static('etc'));
 
 app.get('/', function(req, res) {
@@ -45,4 +46,6 @@ app.get('/editor', function (req,res) {
     request.end();
 });
 
-app.listen(80);
+app.listen(app.get('port'), function() {
+    console.log('running on port', app.get('port'))
+})
