@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp',[]);
 myApp.factory('myData',function ($window) {
     return {
-        message: $window.localStorage['stuff']
+        message: $window.localStorage['stuff'] ? $window.localStorage['stuff'] : '> write markdown here..' 
     }
 });
 
