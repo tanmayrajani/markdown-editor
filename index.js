@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 app.get('/editor', function (req,res) {
     var data = querystring.stringify({
         client_id: "30c3384edb45c8ebe81e",
-        redirect_uri: "http://markdown-ed.herokuapp.com/editor",
+        redirect_uri: "https://markdown-ed.herokuapp.com/editor",
         client_secret: "4bd2ddb09d6de7cd8cb324482d2970238d6c241b",
         code: req.query.code
     });
