@@ -10,15 +10,6 @@ h2{
 .row{
     padding:0 1.5%;
 }
-a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-a:hover{
-    text-decoration: none;
-    color: white;
-}
 
 .portion-le{
     width: 45%;
