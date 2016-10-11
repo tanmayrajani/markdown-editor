@@ -22,7 +22,7 @@ myApp.controller('MarkdownRenderCtrl',function($scope,$location,$element,$compil
 
     $scope.$watch('data.message', function (newval, oldval) {
         var $http = angular.injector(['ng']).get('$http');
-        $http.post('http://api.github.com/markdown/raw?access_token=' + $scope.location.$$absUrl.substring($scope.location.$$absUrl.indexOf('=')+1),
+        $http.post('https://api.github.com/markdown/raw?access_token=' + $scope.location.$$absUrl.substring($scope.location.$$absUrl.indexOf('=')+1),
                 newval,
                 {headers:{'Content-Type':'text/plain'}})
             .then(function(res){
