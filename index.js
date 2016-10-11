@@ -3,13 +3,13 @@ var app = express();
 var querystring = require('querystring');
 var http = require("https");
 var path = require('path');
+var att ='';
+
 app.use(express.static('etc'));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/hello.html'));
 });
-
-var att ='';
 
 app.get('/editor', function (req,res) {
     var data = querystring.stringify({
