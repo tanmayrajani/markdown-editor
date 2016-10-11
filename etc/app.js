@@ -1,9 +1,7 @@
 var myApp = angular.module('myApp',[]);
 myApp.factory('myData',function ($window) {
     return {
-        message: function () {
-	        return $window.localStorage['stuff'];
-        }
+        message: $window.localStorage['stuff'];
     }
 });
 
